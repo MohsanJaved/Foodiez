@@ -1,7 +1,3 @@
- Here’s the revised documentation tailored for **Foodiez**, a non-React project:  
-
----
-
 🍴 **Foodiez – Food Delivery Website** 🍔  
 An elegant and robust food delivery platform designed to provide a seamless and intuitive online ordering experience. Built with modern web technologies, **Foodiez** is optimized for performance, scalability, and a user-friendly interface.  
 
@@ -18,7 +14,6 @@ An elegant and robust food delivery platform designed to provide a seamless and 
 ---
 
 🛠️ **Technologies and Dependencies**  
-The following tools and libraries power **Foodiez**:  
 
 ```json
 {
