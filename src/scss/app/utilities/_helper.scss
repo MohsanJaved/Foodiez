@@ -1,0 +1,159 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-l{
+    font-size: $font-size-20px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Poppins-Regular;
+
+}
+.nav-b1{
+    font-size: $font-size-18px;
+    line-height: $line-height-16px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+    
+}
+.nav-b2{
+    font-size: $font-size-18px;
+    line-height: $line-height-16px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+}
+.b-ORDER{
+    font-size: $font-size-20px;
+    line-height: $line-height-16px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+}
+.primary-B{
+    font-size: $font-size-30px;
+    line-height: $line-height-27px;
+    font-family: $font-family-Poppins-SemiBold;
+
+    
+    
+}
+
+.Paragraphe-p{
+    font-size: $font-size-20px;
+    line-height: $line-height-30px;
+    font-family: $font-family-Poppins-Regular;
+    
+}
+.Paragraphe{
+    font-size: $font-size-22px;
+    line-height: $line-height-36px;
+    font-family: $font-family-Poppins-Regular;
+
+    
+}
+
+.heading-H1{
+font-size:$font-size-52px;
+ font-family: $font-family-Poppins-SemiBold;
+line-height:$line-height-66px;
+@include breakpoint($secreen-max-md){
+    font-size: $font-size-32px;
+    line-height: $line-height-66px
+   }
+
+}
+.heading-H2{
+    font-size: $font-size-32px;
+    line-height: $line-height-66px;
+    font-family: $font-family-Poppins-SemiBold;
+    @include breakpoint($secreen-max-md){
+        font-size: $font-size-22px;
+        line-height: $line-height-33px;
+       }
+}
+
+.heading-H3{
+    font-size: $font-size-22px;
+    line-height: $line-height-33px;
+    font-family: $font-family-Poppins-SemiBold;
+    @include breakpoint($secreen-max-md){
+        font-size: $font-size-18px;
+        line-height: $line-height-27px;
+       } 
+}
+.heading-s-H1{
+    font-size: $font-size-22px;
+    line-height: $line-height-33px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+    
+}
+.heading-H3-R{
+    font-size: $font-size-32px;
+    line-height: $line-height-33px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+    
+}
+.heading-H4{
+    font-size: $font-size-24px;
+    line-height: $line-height-33px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+    
+}
+.heading-s-H1{
+    font-size: $font-size-30px;
+    line-height: $line-height-33px;
+    font-family: $font-family-Poppins-Regular;
+
+}
+// hero start here
+
+
+.logo{
+    font-size: $font-size-40px;
+    line-height: $line-height-20px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+    
+}
+
+
+.footer-h{
+    font-size: $font-size-24px;
+    line-height: $line-height-27px;
+    font-family: $font-family-Poppins-SemiBold;
+    
+
+}
+
+.footer-l{
+    font-size: $font-size-20px;
+    line-height: $line-height-30px;
+    font-family: $font-family-Poppins-Regular;
+
+}

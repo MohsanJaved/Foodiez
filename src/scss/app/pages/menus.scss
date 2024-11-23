@@ -1,0 +1,115 @@
+//<!-- ============================
+//          menu start  here
+//     ============================ -->
+
+
+.menus {
+    padding: 114px 0px;
+    @include breakpoint($secreen-max-sm) {
+        padding: 72px 0px;
+} 
+    .container {
+        .row-custom {
+            display: flex;
+            justify-content: space-between;
+            // padding: 23px 142px;
+            
+
+
+            gap: 30px 0px;
+            .card-otr {
+                .card-innr {
+
+
+                    border-radius: 0px 49px 0px 0px;
+                    border: 2px solid white;
+                    background-color: #ffffff;
+                    // padding: 12px 0px;
+                    // border-radius: 12px;
+                    align-items: center;
+                    text-align: center;
+
+
+                    .img-fluid {
+                        // height: 134px;
+                        // height: 134px;
+                        height: 233px;
+                        width: 100%;
+                        // padding: 12px 12px;
+                        border-radius: 6px;
+                        object-fit: cover;
+                        border-radius: 0px 49px 0px 60px;
+
+
+                    }
+
+
+
+
+                    .head4 {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 16px;
+
+                        // padding: 22px 14px;
+                        color: #000000;
+
+                        // color: #000;
+                    }
+
+                    .p1 {
+                        color: #000000;
+                        text-align: center;
+                        // padding: 0px 0px 12px 14px;
+                        padding: 24px 0px;
+                    }
+
+                    // .p2{
+                    //     color: #f41515;
+                    //     padding: 0px 0px 12px 14px;
+
+                    // }
+
+                    .btn-otr {
+                        // padding: 32px 0px 0px 19px;
+                        display: flex;
+                        justify-content: center;
+                        gap: 65px;
+                        text-align: center;
+                        align-items: center;
+                        padding-bottom: 23px;
+
+                        .btn-order {
+                            // margin-right: 12px;
+
+                            background: black;
+                            color: white;
+                            box-shadow: none;
+                            outline: none;
+                            padding: 12px 24px;
+                            border-radius: 12px;
+                            transition: .4s;
+
+                            &:hover {
+                                text-decoration: none;
+                                background: linear-gradient(270deg, #FF3147 0%, #6B54B6 99.99%);
+                                color: rgb(247, 245, 245);
+                            }
+
+
+                        }
+
+                        .btn-price {
+                            color: #000;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+//<!-- ============================
+//           menu end here
+//     ============================ -->

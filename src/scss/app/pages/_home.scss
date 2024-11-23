@@ -1,0 +1,1116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d3d3d;
+
+}
+
+.overlay-main {
+    .offcanvas {
+        z-index: 9999;
+        // background-color: $Black-Color2;
+        background-color: black;
+
+        .offcanvas-body {
+            padding: 16px;
+
+            .logo-main {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .logo-otr {
+                    .logo {
+                        width: 100px;
+                        height: 64px;
+                        object-fit: contain;
+                    }
+                }
+
+                .close-icon-otr {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    // background-color: $White-10;
+                    background-color: white;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        // background-color: $Primary-Color;
+                        background-color: red;
+
+                        .close-icon {
+                            // color: $Black-Color;
+                            color: #000000;
+                        }
+                    }
+
+                    .close-icon {
+                        font-size: 20px;
+                        line-height: 0;
+                        // color: $White-Color;
+                        color: rgb(0, 0, 0);
+                        transition: .3s;
+                    }
+                }
+            }
+
+            .ul-items1 {
+                // display: flex;
+                list-style: none;
+                text-decoration: none;
+                margin-bottom: 0px;
+                // padding-left: 0px;
+                margin-top: 15px;
+
+                .li-item {
+                    &:not(:last-child) {
+                        margin-bottom: 12px;
+                    }
+
+                    .a-item {
+                        color: rgb(250, 250, 250);
+                        transition: .5s;
+                        position: relative;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #eb0000;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 2px;
+                            width: 0%;
+                            bottom: -5px;
+                            left: 0px;
+                            transition: .5s;
+                            background-color: black;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                            background: linear-gradient(270deg, #FF3147 0%, #6B54B6 99.99%);
+                        }
+
+
+
+
+                    }
+                }
+            }
+
+            .btn-otr2 {
+                display: none;
+                gap: 0px 12px;
+                text-align: center;
+                align-items: center;
+                margin-top: 40px;
+                @include breakpoint($secreen-xs) {
+                    display: flex;
+} 
+                .btn1-otr {
+                    .btn1-a {
+
+                        color: #000000;
+                        box-shadow: none;
+                        outline: none;
+                        background: #ffffff;
+                        padding: 10px 24px;
+                        border-radius: 12px;
+                        transition: .4s;
+
+                        &:hover {
+                            text-decoration: none;
+                            background: linear-gradient(270deg, #FF3147 0%, #6B54B6 99.99%);
+                            color: rgb(247, 245, 245);
+
+                        }
+
+                    }
+
+                }
+
+                .btn2-otr {
+                    .btn2-a {
+                        color: #000000;
+                        box-shadow: none;
+                        outline: none;
+                        background: #ffffff;
+                        padding: 10px 24px;
+                        border-radius: 12px;
+                        transition: .4s;
+
+                        &:hover {
+                            text-decoration: none;
+                            background: linear-gradient(270deg, #FF3147 0%, #6B54B6 99.99%);
+                            color: rgb(247, 245, 245);
+
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+}
+
+// <!-- ============================
+//           Head start here
+//     ============================ -->
+
+.head-section {
+    .container-fluid {
+        padding: 0px;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 15px;
+
+            @include breakpoint($secreen-max-md){
+                padding: 0px 22px;
+            }
+            @include breakpoint($secreen-xxs){
+                padding: 0px;
+            }
+
+            .menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .menu-icon-otr {
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    // background-color: $White-10;
+                    background-color: #000000;
+                    border-radius: 100%;
+                    margin-right: 16px;
+                    cursor: pointer;
+                    transition: .4s;
+
+                    @include breakpoint($secreen-max-md) {
+                        display: flex;
+                    }
+
+                    @include breakpoint($secreen-xs) {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    &:hover {
+                        // background-color: $Primary-Color;
+                        background-color: rgb(242, 0, 0);
+
+                        .menu-icon {
+                            // color: $Black-Color;
+                            color: #000000;
+                        }
+                    }
+
+                    .menu-icon {
+                        font-size: 20px;
+                        line-height: 0;
+                        // color: $White-Color;
+                        color: white;
+                        transition: .3s;
+
+                        @include breakpoint($secreen-xs) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .logo-innr {
+                    display: flex;
+                @include breakpoint($secreen-xs) {
+    display: none;
+} 
+                    .img-fluid {
+                        height: 78px;
+                        object-fit: cover;
+                        width: 100px;
+                    }
+                }
+            }
+
+        }
+
+        .ul-items1 {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            margin-bottom: 0px;
+            padding-left: 0px;
+
+            @include breakpoint($secreen-max-md) {
+                display: none;
+            }
+
+            .li-item {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                .a-item {
+                    color: rgb(250, 250, 250);
+                    transition: .5s;
+                    position: relative;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #eb0000;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 0%;
+                        bottom: -5px;
+                        left: 0px;
+                        transition: .5s;
+                        background-color: black;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        background: linear-gradient(270deg, #FF3147 0%, #6B54B6 99.99%);
+                    }
+                }
+            }
+        }
+
+        .search-icon1 {
+            @include breakpoint($secreen-xs) {
+                margin-right: 30px;
+            }
+
+            @include breakpoint($secreen-max-md) {
+                margin-left: 230px;
+            }
+
+            font-size: 24px;
+            color: #ffffff;
+            margin-right: -173px;
+        }
+
+        .btn-otr {
+            @include breakpoint($secreen-xs) {
+                display: none;
+            }
+
+            display: flex;
+            gap: 0px 24px;
+            text-align: center;
+            align-items: center;
+            
+            .btn1-otr {
+                .btn1-a {
+
+                    color: white;
+                    box-shadow: none;
+                    outline: none;
+                    background: #292828;
+                    padding: 10px 24px;
+                    border-radius: 12px;
+                    transition: .4s;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        background: white;
+                        color: #000;
+                    }
+                }
+
+            }
+
+            .btn2-otr {
+                .btn2-a {
+                    color: white;
+                    box-shadow: none;
+                    outline: none;
+                    background: #292828;
+                    padding: 10px 24px;
+                    border-radius: 12px;
+                    transition: .4s;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        background: white;
+                        color: #000;
+
+                    }
+                }
+            }
+        }
+        .logo-innr1 {
+            display: none;
+            @include breakpoint($secreen-xs) {
+display: flex;
+} 
+            .img-fluid {
+                height: 78px;
+                object-fit: cover;
+                width: 100px;
+            }
+        }
+    }
+}
+
+// <!-- ============================
+//           Head end here
+//     ============================ -->
+
+
+// <!-- ============================
+//           hero start here
+//     ============================ -->
+
+.hero-section {
+    .container {
+        // @include breakpoint($secreen-xxs) {
+        //     padding: 0px;
+
+        // }
+
+        .row-custom {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 66px;
+            @include breakpoint($secreen-max-md) {
+                padding-top: 33px;
+} 
+            .card-otr {
+                margin-top: 50px;
+                @include breakpoint($secreen-max-md) {
+                    margin-top: 25px;
+    } 
+                .card-innr {
+                    @include breakpoint($secreen-max-sm) {
+                        text-align: center;
+                    }       
+                    .head1 {
+                        color: #ffffff;
+
+                    }
+
+                    .pra-innr {
+                        color: #ffffff;
+                        padding: 30px 0px 45px 0px;
+
+                    }
+
+                    .btn-otr-2 {
+
+                        .btn-innr-2 {
+
+                            box-shadow: none;
+                            outline: none;
+                            padding: 10px 24px;
+                            border-radius: 18px;
+                            transition: .4s;
+                            background: #292828;
+
+                            color: #ffffff;
+
+                            &:hover {
+                                background-color: rgb(247, 245, 245);
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .card-otr1 {
+                margin-top: 16px;
+
+                .card-innr {
+                    position: relative;
+                    top: -40px;
+                    left: 45px;
+
+                    @include breakpoint($secreen-max-md) {
+                        display: none;
+
+                    }
+
+                    .img-fluid {
+                        height: 532px;
+                        width: 729px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// <!-- ============================
+//           end here
+//     ============================ -->
+
+
+// <!-- ============================
+//           steps start here
+//     ============================ -->
+
+.step-section {
+    padding: 114px 0px;
+    @include breakpoint($secreen-max-md) {
+        padding: 72px 0px;
+}
+    .container {
+        .head-1 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: #ffffff;
+            padding-bottom: 118px;
+            @include breakpoint($secreen-max-md) {
+                padding-bottom: 40px;
+        }
+        }
+
+        .row-custom {
+            display: flex;
+            justify-content: space-between;
+
+            .card-otr {
+                .card-otr1 {
+                    // width: 508px;
+                    margin-bottom: 20px;
+
+                    .card-innr {
+                        background: #292828;
+                        color: #ffffff;
+                        align-items: center;
+                        padding: 17px 28px;
+                        display: flex;
+                        border-radius: 27px;
+                        gap: 32px;
+
+                        .img-otr {
+                            background: #ffffff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 56px;
+                            width: 56px;
+                            border-radius: 100%;
+
+                            .head1 {
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-otr-2 {
+               
+                .head1 {
+                    color: #ffffff;
+                    margin-top: 122px;
+                    text-align: left;
+                    align-items: center;
+                    @include breakpoint($secreen-max-md) {
+                        text-align: center;
+                        margin-top: 20px;
+                    } 
+                }
+
+                .btn-otr {
+                    display: flex;
+                    gap: 40px;
+                    padding-top: 35px;
+                    @include breakpoint($secreen-max-md) {
+                        gap: 0;
+                        justify-content: center;
+                        padding-top: 20px;
+                    } 
+                    .btn-innr {
+                        background: #292828;
+                        color: white;
+                        padding: 18px 28px;
+                        border-radius: 16px;
+                        transition: .4s;
+
+                        &:hover {
+                            text-decoration: none;
+                            background: white;
+                            color: black;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// <!-- ============================
+//           steps end here
+//     ============================ -->
+
+
+// <!-- ============================
+//           menu start here
+//     ============================ -->
+
+
+.M-section {
+    .container{
+        .wrapper {
+            .head1 {
+                display: flex;
+                justify-content: center;
+                color: #ffffff;
+            }
+
+            .pra2 {
+                display: flex;
+                justify-content: center;
+                color: #ffffff;
+                text-align: center;
+                padding: 45px 0px;
+            }
+
+        }
+
+        .try {
+            .swiper-wrapper {
+                height: 525px;
+                width: 100%;
+
+                .swiper-slide {
+                    .card-otr {
+                        .card-innr {
+                            border-radius: 0px 49px 0px 0px;
+                            border: 2px solid white;
+                            background-color: #ffffff;
+                            align-items: center;
+                            text-align: center;
+
+                            .img-fluid {
+                                height: 233px;
+                                // width: 316px;
+                                width: 100%;
+                                border-radius: 6px;
+                                object-fit: cover;
+                                border-radius: 0px 49px 0px 60px;
+
+                            }
+
+                            .head4 {
+                                display: flex;
+                                justify-content: center;
+                                padding-top: 16px;
+                                color: #000000;
+                            }
+
+                            .p1 {
+                                color: #000000;
+                                text-align: center;
+                                padding: 24px 0px;
+                            }
+
+                            .p2 {
+                                color: #f41515;
+                                padding: 22px 0px;
+                                text-align: center;
+
+                            }
+
+                            .btn-otr {
+                                display: flex;
+                                justify-content: space-between;
+                                text-align: center;
+                                align-items: center;
+                                // gap: 65px;
+                                padding-bottom: 23px;
+
+                                .btn-order {
+                                    background: #292828;
+                                    color: white;
+                                    box-shadow: none;
+                                    outline: none;
+                                    padding: 12px 24px;
+                                    border-radius: 12px;
+                                    transition: .4s;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                        background: #615f5f;
+                                        color: white;
+                                    }
+
+                                }
+
+                                .btn-price {
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .try2 {
+                .swiper-pagination-bullet-active {
+                    background-color: #ffffff !important;
+                }
+
+                .swiper-pagination-bullet {
+                    background-color: #eee;
+                }
+            }
+        }
+
+        .btn-otr-menu {
+            padding: 53px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            @include breakpoint($secreen-max-md) {
+                padding: 33px 0px 0px 0px;
+}
+            .btn-innr-menu {
+                color: #ffffff;
+                box-shadow: none;
+                background: #292828;
+                outline: none;
+                padding: 14px 34px;
+                border-radius: 18px;
+                transition: .4s;
+
+                &:hover {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    background: #ffffff;
+
+                }
+
+            }
+        }
+    }
+}
+
+
+// <!-- ============================
+//           menu end  here
+//     ============================ -->
+
+// <!-- ============================
+//           How to work start here
+//     ============================ -->
+
+.serve-section {
+    padding: 114px 0px;
+    @include breakpoint($secreen-max-md) {
+        padding: 72px 0px;
+}
+@include breakpoint($secreen-max-sm) {
+    padding: 31px 0px;
+} 
+    .container {
+        .wrapper {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            .head2 {
+                color: #ffffff;
+            }
+
+            .head1 {
+                padding: 38px 0px;
+                color: #ffffff;
+                @include breakpoint($secreen-max-md) {
+                    padding: 12px 0px;
+            }
+            }
+
+        }
+
+        .row-custom-1 {
+            display: flex;
+            justify-content: center;
+            // gap: 55px;
+
+            .card-otr {
+
+                .card-innr {
+                    padding: 12px 0px 0px 0px;
+                    border-radius: 12px;
+                    align-items: center;
+                    text-align: center;
+
+                    .img {
+                        .img-fluid {
+                            height: 134px;
+                            object-fit: cover;
+                          
+                        }
+                    }
+
+                    .head2 {
+                        padding: 22px 0px;
+                        color: #ffffff;
+                        text-align: center;
+                    }
+
+                    .pra1 {
+                        color: #ffffff;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// <!-- ============================
+//           How to work end here
+//     ============================ -->
+
+
+
+// <!-- ============================
+//          peoples start here
+//     ============================ -->
+
+
+.people-section {
+    .container {
+        .row-custom {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            align-items: center;
+
+            .card-otr-p {
+                .card-innr {
+                    @include breakpoint($secreen-max-md) {
+                        text-align: center;
+                }
+                @include breakpoint($secreen-max-sm) {
+                    display: none;
+            }
+                    .img-fluid {
+                        border-radius: 12px;
+                        object-fit: cover;
+                    }
+
+                }
+            }
+
+            .card-otr {
+                .card-innr {
+                    @include breakpoint($secreen-max-md) {
+                        text-align: center;
+                }
+                    .head1 {
+                        color: #ffffff;
+
+                    }
+
+                    .pra {
+                        color: #ffffff;
+                        padding: 56px 0px;
+                        @include breakpoint($secreen-max-md) {
+                            padding: 23px 0px;
+                    }
+                    }
+
+                    .btn-otr-2 {
+                        .btn-innr-2 {
+                            color: #ffffff;
+                            box-shadow: none;
+                            background: #292828;
+                            outline: none;
+                            padding: 10px 24px;
+                            border-radius: 19px;
+                            transition: .4s;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: black;
+                                background: white;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// <!-- ============================
+//           people end here
+//     ============================ -->
+
+// <!-- ============================
+//           testinomial start here
+//     ============================ -->
+
+
+
+.testinomial-section {
+    padding: 114px 0px;
+    // text-overflow: ellipsis;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden;
+    @include breakpoint($secreen-max-md) {
+        padding: 72px 0px;
+}
+    .container {
+        .wrapper {
+            @include breakpoint($secreen-max-sm) {
+                text-align: center;
+        }
+            .head1 {
+                color: #ffffff;
+                padding-bottom: 18px;
+            }
+
+            .pra {
+                color: #ffffff;
+            }
+
+        }
+
+        .row-custom {
+            display: flex;
+            justify-content: center;
+            // padding: 87px 12px;
+            gap: 26px 0px;
+            margin-top: 30px;
+            .card-otr {
+                .card-innr {
+                    background-color: #f0f0f0;
+                    border-radius: 12px;
+                    padding: 28px 28px;
+
+                    .head3 {
+                        color: #000000;
+                        padding-top: 24px;
+                    }
+
+                    .pra1 {
+                        color: #000000;
+                        padding: 13px 0px 64px 0px;
+
+                    }
+
+                    .img-otr {
+                        display: flex;
+                        justify-content: center;
+                        gap: 22px;
+
+                        .img-innr {
+                            .img-fluid {
+                                height: 65px;
+                                width: 56px;
+                                border-radius: 100px;
+                                object-fit: cover;
+
+                            }
+
+                        }
+
+                        .pra-innr {
+                            .head4 {
+                                color: #000000;
+                            }
+
+                            .pra {
+                                color: #000000;
+                            }
+                        }
+
+                    }
+              }
+            }
+        }
+    }
+}
+
+// <!-- ============================
+//           testinomial start here
+//     ============================ -->
+
+// <!-- ============================
+//           footer start here
+//     ============================ -->
+
+.footer-section {
+    background-color: #1d1818;
+
+    .container {
+        .row-custom {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 0px;
+            @include breakpoint($secreen-max-sm) {
+                padding: 50px 0px;
+            } 
+            .card-otr-f {
+                .card-innr {
+                    @include breakpoint($secreen-max-sm) {
+    text-align: center;
+} 
+                    .logo-innr {
+                        .img-fluid {
+                            height: 95px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .follow-us {
+                        .heading {
+                            color: #FFFFFF;
+                            font-size: 28px;
+                            line-height: 44px;
+                            padding: 24px 0px;
+                        }
+
+                        .ul-img {
+                            display: flex;
+                            padding: 0px;
+                            gap: 0px 12px;
+                            @include breakpoint($secreen-max-sm) {
+                                justify-content: center;
+                            } 
+                            .li-img {
+                                // &:not(:last-child) {
+                                //     margin-right: 24px;
+                                // }
+
+                                .a-img {
+                                    position: relative;
+
+                                    i {
+                                        font-size: 28px;
+                                        color: #FFFFFF;
+
+                                        &:hover {
+                                            color: #000000;
+                                        }
+                                    }
+
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        height: 40px;
+                                        width: 15px;
+                                        background-color: #1d1818;
+                                        top: -22px;
+                                        left: 0;
+                                        rotate: 45deg;
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        height: 40px;
+                                        width: 15px;
+                                        background-color: #1d1818;
+                                        bottom: -22px;
+                                        right: 0;
+                                        rotate: 45deg;
+                                    }
+
+                                    width: 65px;
+                                    height: 50px;
+                                    border-radius: 2px;
+                                    background: rgb(0, 0, 0);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: .4s;
+
+                                    &:hover {
+                                        background: white;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-otr {
+                .card-innr {
+                    @include breakpoint($secreen-max-sm) {
+    text-align: center;
+} 
+                    .head3 {
+
+                        color: #ffffff;
+                        padding: 18px 0px;
+                    }
+
+                    .ul-footer {
+
+                        .li-item {
+                            padding-bottom: 12px;                       
+
+                            .a-footer {
+                                color: #615f5f;
+                                transition: 0.4s;
+
+
+                                &:hover {
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                }
+                                i {
+                                    font-size: 28px;
+                                    // color: #FFFFFF;
+                                    color: #615f5f;
+    
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// <!-- ============================
+//           footer end  here
+//     ============================ -->

@@ -1,0 +1,172 @@
+//<!-- ============================
+//           hero start  here
+//     ============================ -->
+
+.hero-section1{
+padding-top: 72px;
+@include breakpoint($secreen-max-sm) {
+    padding: 40px 0px ;
+} 
+    .container {
+padding: 0px 80px ;
+@include breakpoint($secreen-max-md) {
+    padding: 0px 40px ;
+} 
+        .row-custom {
+           
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 71px 0px;
+            // box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+
+            background: #0000001f;
+            border-radius: 28px;
+            box-shadow: 13px 16px;
+            color: #cfcfcf;
+        
+            @include breakpoint($secreen-max-md) {
+                padding: 30px 0px ;
+            } 
+            .card-otr {
+                .card-inr {
+                    .head1 {
+                        color: #ffffff;
+
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+//<!-- ============================
+//           hero  end here
+//     ============================ -->
+
+//<!-- ============================
+//           about start here
+//     ============================ -->
+
+.about-us{
+    padding:114px 0px;
+    @include breakpoint($secreen-max-md) {
+        padding: 72px 0px ;
+    } 
+    .container{
+        .row-custom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+            .card-otr{
+                .card-innr{
+                    .head1{
+                        color: #ffffff;
+                        padding-bottom: 24px;
+
+                    }
+                    .p1{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .card-otr{
+                .card-innr{
+                    text-align: center;
+.img-fluid{
+    @include breakpoint($secreen-max-md) {
+    display: none;
+} 
+    width: 557px;
+    height: 457px;
+}
+                }
+            }
+        }
+    }
+}
+
+//<!-- ============================
+//           about end here
+//     ============================ -->
+
+
+//<!-- ============================
+//           delivery start here
+//     ============================ -->
+
+
+.delivery-boy {
+padding-bottom: 114px;
+    .container {
+        .row-custom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .card-otr {
+                .card-innr {
+                    .img-fluid {
+                        width: 645px;
+                        height: 491px;
+                        object-fit: cover;
+                        @include breakpoint($secreen-max-md) {
+                            display: none;
+                        } 
+                    }
+                }
+            }
+
+            .card-otr {
+                .card-innr {
+                    @include breakpoint($secreen-max-md) {
+                        text-align: center;
+                    } 
+                    .head1 {
+
+                        color: #ffffff;
+
+
+                    }
+
+                }
+
+                .pra {
+
+                    padding: 50px 0px;
+                    color: #ffffff;
+                }
+
+                .btn-otr-2 {
+                    @include breakpoint($secreen-max-md) {
+                        text-align: center;
+                    }
+                    .btn-innr-2 {
+                        color: #000000;
+                        box-shadow: none;
+                        background-color: #ffffff;
+                        outline: none;
+                        padding: 10px 24px;
+                        border-radius: 19px;
+                        transition: .8s;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: rgb(247, 245, 245);
+                            background-color: rgb(181, 79, 72);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//<!-- ============================
+//           delivery end here
+//     ============================ -->
+
